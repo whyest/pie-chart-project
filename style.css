@@ -1,0 +1,131 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+@font-face {
+	font-family: 'GHEA Grapalat';
+	src: url('../fonts/gheagrapalat.woff2') format('woff2'),
+		url('../fonts/gheagrapalat.woff') format('woff');
+	font-display: swap;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 100px;
+	padding-top: 276px;
+}
+
+.descr-menu {
+	min-width: 207px;
+}
+
+.descr-menu__list {
+	list-style-type: none;
+}
+
+.descr-menu__link {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 8px;
+	background: #fff;
+	opacity: 0.6;
+	transition: all 0.3s ease-in-out;
+	font-family: 'GHEA Grapalat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 100%;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.descr-menu__link.active {
+	color: #000;
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.descr-menu__text {
+	position: relative;
+	padding-bottom: 4px;
+}
+
+.descr-menu__text::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	transform: translateX(-50%);
+	opacity: 0;
+}
+
+.descr-menu__text--pink::before {
+	background-color: #ff69b4;
+}
+
+.descr-menu__text--limegreen::before {
+	background-color: #97bb31;
+}
+
+.descr-menu__text--grey::before {
+	background-color: #d9d9d9;
+}
+
+.descr-menu__link.active .descr-menu__text::before {
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.descr-menu__box {
+	align-items: center;
+	justify-content: center;
+	width: 14px;
+	height: 14px;
+	margin-right: 14px;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.descr-menu__box.active {
+	opacity: 1;
+}
+
+.descr-menu__box--pink {
+	background-color: #ff69b4;
+}
+
+.descr-menu__box--limegreen {
+	background-color: #97bb31;
+}
+
+.descr-menu__box--grey {
+	background-color: #d9d9d9;
+}
+
+.pie-chart {
+	max-width: 514px;
+	max-height: 514px;
+	margin-right: 94px;
+	margin-left: 16.8%;
+}
+
+.pie-chart svg {
+	display: block;
+	transition: all 0.3s ease-in-out;
+}
+
+.pie-chart a {
+	transition: all 0.3s ease-in-out;
+}

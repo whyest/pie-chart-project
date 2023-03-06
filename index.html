@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pie Chart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="content">
+    <div class="pie-chart">
+      <svg width="514" height="514" viewBox="0 0 514 514" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a href="#limegreen" class="pie-chart__link limegreen" data-color="#799627">
+          <path
+            d="M147.575 24.4594C98.5845 47.5124 58.1263 85.449 31.9724 132.857C5.81854 180.264 -4.69475 234.721 1.93246 288.457C8.55967 342.193 31.9888 392.464 68.8772 432.097C105.766 471.729 154.229 498.699 207.352 509.159L257 257L147.575 24.4594Z"
+            fill="#97BB31" />
+        </a>
+        <a href="#pink" class="pie-chart__link pink" data-color="#cc5490">
+          <path
+            d="M513.5 257C513.5 213.711 502.565 171.124 481.711 133.189C460.856 95.255 430.757 63.203 394.207 40.0077C357.657 16.8124 315.841 3.22525 272.637 0.507127C229.434 -2.21099 186.244 6.02796 147.075 24.4595L256.5 257H513.5Z"
+            fill="#FF69B4" />
+        </a>
+        <a href="#grey" class="pie-chart__link grey" data-color="#d9d9d9">
+          <path
+            d="M513.602 257C513.602 294.955 505.195 332.439 488.986 366.758C472.776 401.078 449.166 431.381 419.852 455.49C390.538 479.6 356.248 496.917 319.446 506.198C282.643 515.479 244.241 516.493 207 509.168L256.602 257H513.602Z"
+            fill="#d9d9d9" />
+        </a>
+      </svg>
+    </div>
+    <div class="descr-menu">
+      <ul class="descr-menu__list">
+        <li class="descr-menu__item descr-menu__item--pink">
+          <a href="#pink" class="descr-menu__link" data-color="#cc5490">
+            <span class="descr-menu__box descr-menu__box--pink"></span>
+            <span class="descr-menu__text descr-menu__text--pink">
+              Розовый сегмент
+            </span>
+          </a>
+        </li>
+        <li class="descr-menu__item descr-menu__item--limegreen">
+          <a href="#limegreen" class="descr-menu__link" data-color="#799627">
+            <span class="descr-menu__box descr-menu__box--limegreen"></span>
+            <span class="descr-menu__text descr-menu__text--limegreen">
+              Зеленый сегмент
+            </span>
+          </a>
+        </li>
+        <li class="descr-menu__item descr-menu__item--grey">
+          <a href="#grey" class="descr-menu__link" data-color="#d9d9d9">
+            <span class="descr-menu__box descr-menu__box--grey"></span>
+            <span class="descr-menu__text descr-menu__text--grey">
+              Серый сегмент
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
